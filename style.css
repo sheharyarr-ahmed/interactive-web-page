@@ -1,0 +1,137 @@
+/* * {
+  border-top: 20px solid cyan;  this code right here is the example of *(universal selector which also has the lowest priority but is used when an specific property has to applied to all the elements)
+} */
+
+h1,
+h2,
+h3,
+h4,
+li,
+p {
+  font-family: sans-serif;
+  color: rgb(88, 87, 87);
+}
+
+h1,
+h2, h3,
+h4 {
+  color: #00ffff;
+}
+
+h1 {
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: left;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 26px;
+  text-align: left;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+article header p {
+  font-style: italic;
+}
+ul li {
+  font-style: normal;
+}
+
+#testing {
+  font-size: 27px;
+  font-style: normal;
+}
+#copyright {
+  font-style: italic;
+}
+.asidepara {
+  font-size: 12;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.asidebulletpoints {
+  list-style: none;
+}
+
+aside {
+  background-color: white;
+  border-top: 5px solid cyan;
+}
+
+body {
+  background-color: white;
+}
+
+li:first-child {
+  color: red;
+  font-weight: bold;
+}
+
+li:last-child {
+  color: red;
+}
+
+article p:last-child {
+  color: red;
+}
+
+a:link {
+  color: cyan;
+  text-decoration: none;
+}
+
+a:visited {
+  color: cyan;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+
+a:active {
+  background-color: blue;
+  font-style: italic;
+}
+
+.header1 {
+  background-color: rgb(243, 231, 231);
+}
+/* one important theory of css
+the follwoing list is priortised from top to bottom: 
+id 
+class 
+element
+universal selector  */
+
+nav a:link {
+  font-size: 30px;
+}
+
+nav p {
+  font-size: 30px;
+  font-weight: bold;
+}
