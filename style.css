@@ -2,6 +2,11 @@
   border-top: 20px solid cyan;  this code right here is the example of *(universal selector which also has the lowest priority but is used when an specific property has to applied to all the elements)
 } */
 
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 h1,
 h2,
 h3,
@@ -19,7 +24,7 @@ h4 {
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 30px;
   text-transform: uppercase;
   text-align: left;
   font-style: italic;
@@ -29,10 +34,12 @@ h2 {
   font-size: 26px;
   text-align: left;
   font-style: italic;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 22px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -46,10 +53,20 @@ p {
   line-height: 1.5;
 }
 
+ul, ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
 li {
   font-size: 18px;
-  line-height: 1.5;
   text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  color: red;
+  margin-bottom: 0px;
 }
 
 article header p {
@@ -78,6 +95,10 @@ ul li {
 aside {
   background-color: white;
   border-top: 5px solid cyan;
+  border-bottom: 5px solid cyan;
+  /* padding-top:20px;
+  padding-bottom: 20px; */
+  padding: 50px 0px;
 }
 
 body {
@@ -89,13 +110,13 @@ li:first-child {
   font-weight: bold;
 }
 
-li:last-child {
+/* li:last-child {
   color: red;
-}
+} moved up on the bottom li */
 
-article p:last-child {
+/* article p:last-child {
   color: red;
-}
+}the reason it was commented to make the name of course authors black as it was red before */
 
 a:link {
   color: cyan;
@@ -119,6 +140,13 @@ a:active {
 
 .header1 {
   background-color: rgb(243, 231, 231);
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; another way of writing the above commented code for coding is below */ 
+  padding: 20px 40px; 
+  /* here 20 represents height top and bottom included where as 40 represents width right and left included */
+  margin-bottom: 60px;
+
 }
 /* one important theory of css
 the follwoing list is priortised from top to bottom: 
@@ -128,10 +156,27 @@ element
 universal selector  */
 
 nav a:link {
-  font-size: 30px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-nav p {
+/* nav p {
   font-size: 30px;
   font-weight: bold;
+} */
+
+.authorsina {
+  color: black;
+}
+
+article header {
+margin-bottom: 40px;
+}
+
+p{
+  margin-bottom: 15px;
+}
+
+.aside-margin-top {
+  margin-top: 50px;
 }
