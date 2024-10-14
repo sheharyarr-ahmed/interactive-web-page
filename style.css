@@ -99,6 +99,7 @@ aside {
   /* padding-top:20px;
   padding-bottom: 20px; */
   padding: 50px 0px;
+  width: 500px;
 }
 
 body {
@@ -146,6 +147,7 @@ a:active {
   padding: 20px 40px; 
   /* here 20 represents height top and bottom included where as 40 represents width right and left included */
   margin-bottom: 60px;
+  height: 80px;
 
 }
 /* one important theory of css
@@ -179,4 +181,18 @@ p{
 
 .aside-margin-top {
   margin-top: 50px;
+  background-color: rgb(243, 231, 231);
+}
+
+/* the beneath code is used to adapt the parent contaier size which is header and forom now onwards we will be using dimensions of images in percentages and will be assigning in css file but not in html file */
+.code-image {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 70%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto; /*here 0 is height and auto is margin both left and right*/
 }
