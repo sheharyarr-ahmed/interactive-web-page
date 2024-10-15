@@ -35,7 +35,10 @@ h2 {
   font-size: 26px;
   text-align: left;
   font-style: italic;
+  margin-top: 10px;
   margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
 }
 
 h3 {
@@ -107,6 +110,7 @@ aside {
 
 body {
   background-color: white;
+  position: relative; /*the concept of positioning of elements, after setting the position of button "Like" to position: absolute make the postion of of body:relative in order to break the button's absolute postion with view-port and so that the button can be placed anywehre with-in the body. */
 }
 
 li:first-child {
@@ -151,6 +155,7 @@ a:active {
   /* here 20 represents height top and bottom included where as 40 represents width right and left included */
   margin-bottom: 60px;
   height: 18%;
+  border-top: 10px solid cyan;
 }
 /* one important theory of css
 the follwoing list is priortised from top to bottom: 
@@ -209,3 +214,65 @@ p {
   margin-right: auto; */
 /*margin: 0 auto;*/ /*here 0 is height and auto is margin both left and right*/
 /* } */
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  /*position: relative;*/ /*later on the its position was also set to relative so that the button's position can be come in relation with container and can be placed anywhere within the container which in this case was <div> element*/
+}
+
+button {
+  font-size: 15px;
+  padding: 1%;
+  cursor: pointer;
+  position: absolute;
+  /* top: 0; */
+  /* left: 0px;
+  bottom: 0px; */
+  bottom: 50px;
+  right: 50px;
+}
+
+.second-header {
+  margin-bottom: 80px;
+  /* position: relative; */
+}
+
+.why-html::first-letter {
+  font-size: 50px;
+  font-style: italic;
+}
+
+.second-header h2::first-letter {
+  font-size: 50px;
+}
+
+/* p::first-line {
+  color: red; the concept of psudeo elements
+} */
+
+/* .second-header + p::first-line {
+  color: red; the concept of adjacent element or adjacent sibling
+} */
+
+.second-header h2::after {
+  /*the concept of before and after psudeo-element*/
+  content: "TOP";
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  padding: 0.5%;
+  /* right: -12% we can also write like this  */
+  background-color: yellow;
+}
+
+.author-pic {
+  display: block;
+}
+
+h2 {
+  padding-right: 5%;
+  font-size: 40px;
+  /* background-color: orange; */
+}
