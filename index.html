@@ -7,16 +7,17 @@
   <!DOCTYPE html>
   <body>
     <div class="container">
-      <header class="header1">
+      <header class="header1 clear-fix">
         <h1>📘 The Code Magazine</h1>
 
         <nav>
           <!-- <p>this is the navigation bar</p> -->
           <a href="blog.html">Blogs</a>
-          <a href="#">Challenges</a>
-          <a href="#">Firefox</a>
-          <a href="#">CSS Grid</a>
+          <a href="blog.html">Challenges</a>
+          <a href="blog.html">Firefox</a>
+          <a href="blog.html">CSS Grid</a>
         </nav>
+        <!-- <div class="clear-box"></div> -->
       </header>
       <article>
         <header class="second-header">
@@ -29,11 +30,11 @@
             width="50"
             height="50"
           />
-          <p id="testing">
+          <!-- <p id="testing">
             this para on which id is applied and is present in article/header
             and this will called in style by #testing
-          </p>
-          <p>
+          </p> -->
+          <p class="posted">
             Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
           </p>
           <img
@@ -99,16 +100,17 @@
           <li>To have fun 😃</li>
         </ul>
         <p>Hopefully you learned something new here. See you next time!</p>
+      </article>
         <aside class="aside-margin-top">
           <h4>Related Posts</h4>
-          <p class="asidepara">
+          <!-- <p class="asidepara">
             i am going to make this line to be called and apply changes to this
             specific line classes method in this para, the next para and the one
             after the unordered list
-          </p>
-          <p class="asidepara">
+          </p> -->
+          <!-- <p class="asidepara">
             this line as well and one line after the list as well
-          </p>
+          </p> -->
           <ul class="asidebulletpoints">
             <li>
               <img src="images/related-1.jpg" width="50" height="50" />
@@ -139,10 +141,9 @@
             </li>
           </ul>
         </aside>
-        <p class="testingclasspara">
+        <!-- <p class="testingclasspara">
           this para also to be changed by classes method
-        </p>
-      </article>
+        </p> -->
       <footer id="copyright">Copyright &copy; 2024 by Sheharyar SE</footer>
     </div>
   </body>

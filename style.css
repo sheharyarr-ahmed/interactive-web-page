@@ -5,6 +5,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 h1,
@@ -29,6 +30,10 @@ h1 {
   text-transform: uppercase;
   text-align: left;
   font-style: italic;
+}
+
+h1::first-letter {
+  font-style: normal;
 }
 
 h2 {
@@ -82,20 +87,22 @@ ul li {
   /* display: inline; just to understand the concept that li is an block element and it can be converted into inline element */
 }
 
-#testing {
+/* #testing {
   font-size: 27px;
   font-style: normal;
-}
+} */
+
 #copyright {
   font-style: italic;
 }
-.asidepara {
+/* .asidepara {
   font-size: 12;
   text-transform: uppercase;
   font-weight: bold;
-}
+} */
 .asidebulletpoints {
   list-style: none;
+  margin-left: 0px;
 }
 
 aside {
@@ -104,8 +111,9 @@ aside {
   border-bottom: 5px solid cyan;
   /* padding-top:20px;
   padding-bottom: 20px; */
-  padding: 50px 0px;
+  padding: 50px 40px;
   width: 500px;
+  /* box-sizing: border-box; this line is moved to universal selector */
 }
 
 body {
@@ -151,10 +159,10 @@ a:active {
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; another way of writing the above commented code for coding is below */
-  padding: 20px 40px;
+  padding: 20px 20px;
   /* here 20 represents height top and bottom included where as 40 represents width right and left included */
-  margin-bottom: 60px;
-  height: 18%;
+  margin-bottom: 30px;
+  /* height: 40px; */
   border-top: 10px solid cyan;
 }
 /* one important theory of css
@@ -164,16 +172,21 @@ class
 element
 universal selector  */
 
+/* nav {
+
+} */
+
 nav a:link {
   font-size: 16px;
   font-weight: bold;
   /* background-color: black; */
   /* margin: 5%; just to understand the box models that only in them paddings and margin only applies in hirzontal manner in them */
   /* display: block; conversion of box models form inline lement to block level elment  */
-  margin-right: 5%;
+  margin-right: 0px;
   /* margin-top: 2%; this will not work because nav was inline box (and in inline box height and widht cannot be assigned)  beofre converting it to inline-block below */
-  display: inline-block;
+  display: inline;
   margin-top: 1%; /* now this works because it has been converted from inline box to inline-block box */
+  padding-left: 20px;
 }
 
 nav a:link:last-child {
@@ -216,7 +229,7 @@ p {
 /* } */
 
 .container {
-  width: 70%;
+  width: 1200px;
   margin: 0 auto;
   /*position: relative;*/ /*later on the its position was also set to relative so that the button's position can be come in relation with container and can be placed anywhere within the container which in this case was <div> element*/
 }
@@ -234,7 +247,7 @@ button {
 }
 
 .second-header {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   /* position: relative; */
 }
 
@@ -269,10 +282,65 @@ button {
 
 .author-pic {
   display: block;
+  margin-top: 0px;
 }
 
 h2 {
   padding-right: 5%;
   font-size: 40px;
   /* background-color: orange; */
+}
+
+/*FLOATS*/
+.author-pic {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.posted {
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+  display: block;
+}
+
+h1 {
+  float: left;
+
+}
+
+nav {
+  padding-right: 10px;
+  float: right;
+  padding-top: 10px;
+}
+
+/* .clear-box { /* same thing is happening in the code below but with a trick
+  clear: both;
+} */
+
+.clear-fix::after {
+  /* a new class was made in the html */
+  content: "";
+  clear: both;
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+.aside-margin-top {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 40px;
 }
