@@ -123,10 +123,10 @@ body {
   position: relative; /*the concept of positioning of elements, after setting the position of button "Like" to position: absolute make the postion of of body:relative in order to break the button's absolute postion with view-port and so that the button can be placed anywehre with-in the body. */
 }
 
-li:first-child {
-  /* color: red; */
-  /* font-weight: bold; */
-}
+/* li:first-child {
+  color: red;
+  font-weight: bold;
+} */
 
 /* li:last-child {
   color: red;
