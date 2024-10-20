@@ -75,7 +75,7 @@ li {
 }
 
 li:last-child {
-  color: red;
+  /* color: red; */
   margin-bottom: 0px;
 }
 
@@ -100,21 +100,23 @@ ul li {
   text-transform: uppercase;
   font-weight: bold;
 } */
-.asidebulletpoints {
+/* .asidebulletpoints {
   list-style: none;
   margin-left: 0px;
-}
+  width: 100%;
+} */
 
-aside {
+/* aside {
   background-color: white;
   border-top: 5px solid cyan;
   border-bottom: 5px solid cyan;
   /* padding-top:20px;
   padding-bottom: 20px; */
-  padding: 50px 40px;
-  width: 500px;
-  /* box-sizing: border-box; this line is moved to universal selector */
+/*padding: 50px 40px;
+  padding: 0px;
+  width: 100%;
 }
+  /* box-sizing: border-box; this line is moved to universal selector */
 
 body {
   background-color: white;
@@ -122,8 +124,8 @@ body {
 }
 
 li:first-child {
-  color: red;
-  font-weight: bold;
+  /* color: red; */
+  /* font-weight: bold; */
 }
 
 /* li:last-child {
@@ -185,8 +187,9 @@ nav a:link {
   margin-right: 0px;
   /* margin-top: 2%; this will not work because nav was inline box (and in inline box height and widht cannot be assigned)  beofre converting it to inline-block below */
   display: inline;
-  margin-top: 1%; /* now this works because it has been converted from inline box to inline-block box */
-  padding-left: 20px;
+  /* margin-top: 1%;*/ /*now this works because it has been converted from inline box to inline-block box */
+  /* padding-left: 20px; */
+  margin-left: 10px;
 }
 
 nav a:link:last-child {
@@ -210,10 +213,10 @@ p {
   margin-bottom: 15px;
 }
 
-.aside-margin-top {
+/* .aside-margin-top {
   margin-top: 50px;
   background-color: rgb(243, 231, 231);
-}
+} */
 
 /* the beneath code is used to adapt the parent contaier size which is header and forom now onwards we will be using dimensions of images in percentages and will be assigning in css file but not in html file */
 .code-image {
@@ -242,8 +245,8 @@ button {
   /* top: 0; */
   /* left: 0px;
   bottom: 0px; */
-  bottom: 50px;
-  right: 50px;
+  bottom: 18px;
+  right: 18px;
 }
 
 .second-header {
@@ -292,7 +295,7 @@ h2 {
 }
 
 /*FLOATS*/
-.author-pic {
+/* .author-pic {
   float: left;
   margin-bottom: 20px;
 }
@@ -313,15 +316,17 @@ nav {
   padding-right: 10px;
   float: right;
   padding-top: 10px;
-}
+} */
 
 /* .clear-box { /* same thing is happening in the code below but with a trick
   clear: both;
 } */
 
+/*
 .clear-fix::after {
   /* a new class was made in the html */
-  content: "";
+/*
+ content: "";
   clear: both;
   display: block;
 }
@@ -343,4 +348,65 @@ footer {
 h4 {
   font-size: 20px;
   margin-bottom: 40px;
+} 
+  */
+
+/* FOR FLEXBOXES*/
+.header1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-in-fb {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.posted {
+  margin-bottom: 0px;
+}
+
+/* related posts */
+.related-posts {
+  background-color: rgb(243, 231, 231);
+  border-top: 10px solid cyan;
+  border-bottom: 10px solid cyan;
+}
+
+.related-ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.related-li {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 20px;
+}
+h4 {
+  margin-bottom: 20px;
+}
+
+.related-author {
+  margin-bottom: 0px;
+}
+
+.related-posts a:link {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.related-posts p {
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.related-posts {
+  margin-bottom: 20px;
 }
