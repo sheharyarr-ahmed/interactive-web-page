@@ -22,7 +22,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #00ffff;
+  color: #0792a1;
 }
 
 h1 {
@@ -39,7 +39,7 @@ h1::first-letter {
 h2 {
   font-size: 26px;
   text-align: left;
-  font-style: italic;
+  font-style: normal;
   margin-top: 10px;
   margin-bottom: 30px;
   position: relative;
@@ -52,9 +52,13 @@ h3 {
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+h4 {
+  color: black;
 }
 
 p {
@@ -137,12 +141,12 @@ body {
 }the reason it was commented to make the name of course authors black as it was red before */
 
 a:link {
-  color: cyan;
+  color: #0792a1;
   text-decoration: none;
 }
 
 a:visited {
-  color: cyan;
+  color: #0792a1;
 }
 
 a:hover {
@@ -165,7 +169,7 @@ a:active {
   /* here 20 represents height top and bottom included where as 40 represents width right and left included */
   margin-bottom: 30px;
   /* height: 40px; */
-  border-top: 10px solid cyan;
+  border-top: 10px solid #0792a1;
 }
 /* one important theory of css
 the follwoing list is priortised from top to bottom: 
@@ -189,7 +193,7 @@ nav a:link {
   display: inline;
   /* margin-top: 1%;*/ /*now this works because it has been converted from inline box to inline-block box */
   /* padding-left: 20px; */
-  margin-left: 10px;
+  margin-left: 54px;
 }
 
 nav a:link:last-child {
@@ -232,7 +236,7 @@ p {
 /* } */
 
 .container {
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
   /*position: relative;*/ /*later on the its position was also set to relative so that the button's position can be come in relation with container and can be placed anywhere within the container which in this case was <div> element*/
 }
@@ -245,8 +249,8 @@ button {
   /* top: 0; */
   /* left: 0px;
   bottom: 0px; */
-  bottom: 18px;
-  right: 18px;
+  bottom: 6%;
+  right: 3%;
 }
 
 .second-header {
@@ -256,7 +260,7 @@ button {
 
 .why-html::first-letter {
   font-size: 50px;
-  font-style: italic;
+  font-style: normal;
 }
 
 .second-header h2::first-letter {
@@ -276,8 +280,8 @@ button {
   content: "TOP";
   font-size: 20px;
   position: absolute;
-  top: 0px;
-  right: 0%;
+  top: -12px;
+  right: -18%;
   padding: 0.5%;
   /* right: -12% we can also write like this  */
   background-color: yellow;
@@ -373,8 +377,9 @@ h4 {
 /* related posts */
 .related-posts {
   background-color: rgb(243, 231, 231);
-  border-top: 10px solid cyan;
-  border-bottom: 10px solid cyan;
+  border-top: 10px solid #0792a1;
+  border-bottom: 10px solid #0792a1;
+  padding: 2%;
 }
 
 .related-ul {
@@ -390,7 +395,7 @@ h4 {
   gap: 20px;
 }
 h4 {
-  margin-bottom: 20px;
+  margin:40px;
 }
 
 .related-author {
@@ -409,4 +414,34 @@ h4 {
 
 .related-posts {
   margin-bottom: 20px;
+  flex: 0 0 300px; /*flex-grow, flex-shrink, flex-basis*/
+}
+
+.section {
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+  margin-bottom: 60px;
+}
+
+.article {
+  flex: 1;
+}
+
+p {
+  text-align: justify;
+  font-weight: bold;
+}
+
+.related-posts p {
+  font-weight: normal;
+}
+
+article li {
+  text-transform: none;
+  font-weight: bold;
+}
+
+.w-i-h::first-letter {
+  font-size: 50px;
 }
