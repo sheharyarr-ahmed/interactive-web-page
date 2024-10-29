@@ -167,7 +167,7 @@ a:active {
   padding-right: 40px; another way of writing the above commented code for coding is below */
   padding: 20px 20px;
   /* here 20 represents height top and bottom included where as 40 represents width right and left included */
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   /* height: 40px; */
   border-top: 10px solid #0792a1;
 }
@@ -210,7 +210,7 @@ nav a:link:last-child {
 }
 
 article header {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 p {
@@ -395,7 +395,7 @@ h4 {
   gap: 20px;
 }
 h4 {
-  margin:40px;
+  margin: 40px;
 }
 
 .related-author {
@@ -412,12 +412,13 @@ h4 {
   font-style: italic;
 }
 
+/* REMOVING FLEXBOX LAYOUT TO REPLACE IT WITH CSS GRID  */
+/*
 .related-posts {
   margin-bottom: 20px;
-  flex: 0 0 300px; /*flex-grow, flex-shrink, flex-basis*/
-}
+  flex: 0 0 300px; /*flex-grow, flex-shrink, flex-basis}*/
 
-.section {
+/* .section {
   display: flex;
   align-items: flex-start;
   gap: 70px;
@@ -426,7 +427,9 @@ h4 {
 
 .article {
   flex: 1;
-}
+} */
+
+/* the upper commenetd part is related to flex-box layout */
 
 p {
   text-align: justify;
@@ -444,4 +447,28 @@ article li {
 
 .w-i-h::first-letter {
   font-size: 50px;
+}
+
+/* FOR CSS GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px; /*sometimes we don't usually speciffy grid-template-rows because it automatically adjusts with the size of the content.*/
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.header1 {
+  grid-column: 1 / span 2;
+}
+
+.article {
+}
+
+.related-posts {
+}
+
+#copyright {
+  /* background-color: cyan; */
+  grid-column: 1 / 3;
 }
